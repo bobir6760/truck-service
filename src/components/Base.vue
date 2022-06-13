@@ -30,7 +30,7 @@ export default {
 }
 .base-wrapper__title {
   font-size: 50px;
-  font-weight: 900;
+  font-weight: bold;
   text-align: center;
   cursor: pointer;
 }
@@ -38,19 +38,45 @@ export default {
   text-decoration: underline crimson;
 }
 .base-image img {
-  object-fit: contain;
+  width: 100%;
   cursor: pointer;
 }
 .base-item__image img {
   cursor: pointer;
   object-fit: contain;
+  width: 70px;
+  height: 70px;
 }
 @media screen and (max-width: 1200px) {
 }
 @media screen and (max-width: 992px) {
+  .base-wrapper__title {
+    font-size: 40px;
+  }
+  .base-item__image img {
+    object-fit: contain;
+    width: 60px;
+    height: 60px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .base-wrapper__title {
+    font-size: 30px;
+  }
+  .base-item__image img {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
 }
 @media screen and (max-width: 576px) {
+  .base-wrapper__title {
+    font-size: 25px;
+  }
+  .base-item__image img {
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+  }
 }
 </style>

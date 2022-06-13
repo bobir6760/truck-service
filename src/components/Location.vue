@@ -41,20 +41,20 @@ export default {
   padding: 50px 0px;
 }
 .location-wrapper {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   background-color: #f4f4f4;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
 }
 .location-title {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   cursor: pointer;
 }
 .location-subtitle {
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
 }
 .location-image img {
@@ -64,9 +64,33 @@ export default {
 @media screen and (max-width: 1200px) {
 }
 @media screen and (max-width: 992px) {
+  .location-title {
+    font-size: 30px;
+  }
+  .location-subtitle {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .location-title {
+    font-size: 25px;
+  }
+  .location-subtitle {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 576px) {
+  .location-title {
+    font-size: 25px;
+  }
+  .location-subtitle {
+    font-size: 12px;
+  }
+  .location-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+  }
 }
 </style>

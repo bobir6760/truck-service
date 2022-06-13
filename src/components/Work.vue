@@ -68,11 +68,11 @@
               <div class="work-icon">
                 <img src="@/assets/img/Facebook.svg" alt="" />
               </div>
-              <div class="finish-subtitle">truck_service_ofFicIaL</div>
+              <div class="work-card__subtitle">truck_service_ofFicIaL</div>
             </div>
             <div class="work-image">
               <img src="@/assets/img/Instagram.svg" alt="" />
-              <div class="finish-subtitle">truck_service_ofFicIaL</div>
+              <div class="work-card__subtitle">truck_service_ofFicIaL</div>
             </div>
           </div>
         </div>
@@ -100,12 +100,6 @@ export default {
 }
 .work-item__image img {
   width: 100%;
-  cursor: pointer;
-}
-.work-title {
-  font-size: 50px;
-  font-weight: bold;
-  width: 80%;
   cursor: pointer;
 }
 .work-subtitle {
@@ -161,19 +155,15 @@ export default {
 }
 .work-wrapper__title {
   font-size: 20px;
-  padding-bottom: 10px;
   cursor: pointer;
 }
 .work-wrapper__subtitle {
-  padding-bottom: 5px;
   cursor: pointer;
 }
 .work-truck__set {
   display: flex;
-  padding-top: 10px;
 }
 .work-truck__icon {
-  padding-right: 5px;
   cursor: pointer;
 }
 .work-item__title {
@@ -182,18 +172,43 @@ export default {
   padding: 0px 0px 20px 90px;
   cursor: pointer;
 }
-@media screen and (max-width: 1200px) {
-  .work-title {
-    font-size: 50px;
-    font-weight: bold;
-    width: 80%;
+@media screen and (max-width: 768px) {
+  .work-wrapper__title {
+    font-size: 15px;
+  }
+  .work-wrapper__subtitle {
+    font-size: 12px;
+  }
+  .work-truck__number {
+    font-size: 12px;
+  }
+  .work-truck__title {
+    font-size: 8px;
+  }
+  .work-card__subtitle {
+    font-size: 10px;
+  }
+  .work-wrapper__subtitle {
     cursor: pointer;
+    font-size: 10px;
   }
 }
-@media screen and (max-width: 992px) {
-}
-@media screen and (max-width: 768px) {
-}
 @media screen and (max-width: 576px) {
+  .work-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .work-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .work-item__title {
+    padding: 0px;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+  }
 }
 </style>

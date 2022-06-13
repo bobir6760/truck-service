@@ -1,29 +1,31 @@
 <template>
-<div class="service">
-      <div class="container">
-        <div class="service-wrapper">
-          <div class="service-container">
-            <div class="service-big__title">Affordable truck service</div>
-            <div class="home__title">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                odio in et, lectus sit lorem id integer.
-              </p>
-            </div>
+  <div class="service">
+    <div class="container">
+      <div class="service-wrapper">
+        <div class="service-item">
+          <div class="service-wrapper__title">Affordable truck service</div>
+          <div class="service-wrapper__subtitle">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+              in et, lectus sit lorem id integer.
+            </p>
+          </div>
+          <div class="service-item__btn">
             <button class="service-btn">Чета сделать</button>
           </div>
-          <div class="service-image">
-            <img src="@/assets/img/FURA.png" alt="" />
-          </div>
+        </div>
+        <div class="service-image">
+          <img src="@/assets/img/FURA.png" alt="" />
         </div>
       </div>
-    </div>  
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-name:"Service"
-}
+  name: "Service",
+};
 </script>
 
 <style scoped lang="scss">
@@ -32,37 +34,30 @@ name:"Service"
 }
 .service-wrapper {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 95%;
 }
-.service-container {
-  padding: 30px;
-  margin-left: 70px;
-}
-.service-big__title {
+.service-wrapper__title {
   text-align: start;
   font-size: 60px;
   font-weight: bold;
-  padding: 50px 0px 20px;
   cursor: pointer;
 }
-.service-image {
-  display: flex;
-  justify-content: center;
+.service-image img {
   width: 100%;
-  height: 500px;
   cursor: pointer;
+}
+.service-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .service-btn {
   background: #4762ff;
   border-radius: 15px;
-  padding: 15px 60px 15px 50px;
+  padding: 15px;
   border: none;
-  margin-top: auto;
   color: white;
   font-size: 20px;
-  margin-top: 30px;
   cursor: pointer;
 }
 .service-btn:hover {
@@ -73,9 +68,33 @@ name:"Service"
 @media screen and (max-width: 1200px) {
 }
 @media screen and (max-width: 992px) {
+  .service-image img {
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .service-wrapper__title {
+    font-size: 40px;
+  }
+  .service-wrapper {
+    display: flex;
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .service-btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+  .service-wrapper__title {
+    font-size: 30px;
+  }
+  .service-wrapper__subtitle {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 576px) {
+  .service-wrapper {
+    flex-direction: column;
+  }
 }
 </style>

@@ -6,6 +6,7 @@
     <Mann />
     <Location />
     <Base />
+    <Volvo />
     <Work />
   </div>
 </template>
@@ -16,8 +17,8 @@ import Service from "@/components/Service.vue";
 import Mann from "@/components/Mann.vue";
 import Location from "@/components/Location.vue";
 import Base from "@/components/Base.vue";
+import Volvo from "@/components/Volvo.vue";
 import Work from "@/components/Work.vue";
-
 export default {
   name: "Home",
   components: {
@@ -26,6 +27,7 @@ export default {
     Mann,
     Location,
     Base,
+    Volvo,
     Work,
   },
 };
